@@ -1,6 +1,6 @@
 class Test{
 	public static void main(String[] args){
-		System.out.print("3.封建社会");
+		System.out.print("3.资本社会");
 	}
 }
 
