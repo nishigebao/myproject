@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css" >
+        .bg{
+            background-color: silver;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">学生信息</h1>
+    <a href="../html/insert.html">增加学生信息</a>
+    <table border="1" width="60%" align="center">
+        <tr>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>生日</th>
+            <th>操作</th>
+        </tr>
+        <tr th:each="stu,iterStat:${list}" th:class="${iterStat.odd}?bg">
+            <td th:text="${stu.sid}"></td>
+            <td th:text="${stu.sname}"></td>
+            <td th:text="${stu.sbirth}"></td>
+            <td>
+                <a th:href="@{'selectById?sid='+${stu.sid}}">修改</a>
+                <a th:href="@{'delete?sid='+${stu.sid}}">删除</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

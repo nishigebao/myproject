@@ -1,0 +1,5 @@
+com\hr\entity\Student.class
+com\hr\service\impl\StudentServiceImpl.class
+com\hr\controller\StudentController.class
+com\hr\service\StudentService.class
+com\hr\mapper\StudentMapper.class

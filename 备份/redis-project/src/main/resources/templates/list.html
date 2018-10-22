@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1" width="60%">
+        <tr>
+            <th>编号</th>
+            <th>用户名</th>
+            <th>密码</th>
+            <th>生日</th>
+            <th>操作</th>
+        </tr>
+        <tr th:each="u : ${list}">
+            <td th:text="${u.uname}"></td>
+            <td th:text="${u.upass}"></td>
+            <td th:text="${u.ubirth}"></td>
+            <td>
+                <a href="#">修改</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

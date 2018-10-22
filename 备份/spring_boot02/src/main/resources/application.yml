@@ -1,0 +1,22 @@
+computer:
+  cid: 1
+  name: 联想拯救者
+
+person:
+  id: 1
+  name: 李世民
+
+student:
+  id: 1
+  name: 张三丰
+  marry: true
+  birth: 1999-01-01
+  join: 2018/01/01
+  list:
+    - 吃饭
+    - 睡觉
+    - 打豆豆
+  map: {k1: 睡觉,k2: 睡觉,k3: 打游戏}
+  computer:
+    cid: 1
+    name: 神州战神

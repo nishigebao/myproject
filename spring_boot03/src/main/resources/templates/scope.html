@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script th:inline="javascript">
+            var name = [[${name}]];
+            var sex = [[${session.sex}]];
+            var age = [[${application.age}]];
+            alert(name+" "+sex+" "+age);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

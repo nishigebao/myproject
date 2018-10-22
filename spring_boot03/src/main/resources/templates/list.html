@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>143班学生信息列表</h1>
+    <table border="1" align="center">
+        <tr>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>生日</th>
+            <th>入学日期</th>
+            <th>操作</th>
+        </tr>
+
+        <tr th:each="stu :${list}">
+            <td th:text="${stu.id}"></td>
+            <td th:text="${stu.name}"></td>
+            <td th:text="${stu.sex}"></td>
+            <td th:text="${stu.birth}"></td>
+            <td th:text="${stu.join}"></td>
+            <td>
+                <a th:href="@{/selectById(id=${stu.id})}">查看详情</a>
+                <a th:href="@{/preUpdate(id=${stu.id})}">修改</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

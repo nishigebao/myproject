@@ -1,0 +1,20 @@
+#ctrl+/可以批量注释
+server:
+  port: 8082
+#person:
+#  id: 1
+#  name: 张三丰
+#  marry: true
+#  birth: 1999-01-01
+#  join: 1999/01/01 11:30:59
+#  dog: {did: 11,dname: 旺财}
+#  list:
+#    - 吃饭
+#    - 睡觉
+#    - 打豆豆
+#  map:
+#    dog1: {did: 1,dname: 旺财}
+#    dog2: {did: 2,dname: 来福}
+#  dog:
+#    did: 10
+#    dname: 来福
